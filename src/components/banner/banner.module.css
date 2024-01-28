@@ -1,5 +1,5 @@
 .swiper {
-  @apply h-[70vh];
+  @apply h-[70vh] max-sm:h-[50vh];
 }
 
 .swiper-slide {
