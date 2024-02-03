@@ -4,7 +4,14 @@ import React from "react";
 const LoginTemp = () => {
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      <div
+        className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 h-[100dvh]"
+        style={{
+          backgroundImage: `url("https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003787.jpg?t=st=1706942492~exp=1706946092~hmac=a63664365122e12550102e7729f0739a7f502c5741b3d545a133db11ea33490f&w=996")`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
         <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col gap-6 bg-gradient-to-l from-gray-100 via-[#bce1ff] to-gray-100 p-4 rounded-lg">
           <div>
             <a href="/" className="flex items-center justify-center">

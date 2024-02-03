@@ -102,7 +102,7 @@ function Navbar() {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gradient-to-l from-gray-100 via-[#bce1ff] to-gray-100"
                     >
                       <div className="flex-auto">
                         <a
@@ -117,12 +117,12 @@ function Navbar() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <div className="grid grid-cols-2 divide-x divide-gray-900/5">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gradient-to-l from-gray-100 via-[#bce1ff] to-gray-100"
                     >
                       {item.name}
                     </a>
