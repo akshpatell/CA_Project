@@ -27,7 +27,7 @@ const Form = () => {
             <p className="text-heading4">Term And Conditions</p>
             <div className="flex flex-col gap-2 text-subtitle1">
               <p>1. Not refundable</p>
-              <p>2. Don't share the contact</p>
+              <p>2. Do not share the contact</p>
               <p>3. Services are subject to market risk</p>
             </div>
           </div>
