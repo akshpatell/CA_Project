@@ -1,9 +1,37 @@
 import Image from "next/image";
 import React from "react";
 
+const legals = [
+  { title: "Privacy Policy", link: "/privacy-policy" },
+  { title: "Terms & Conditions", link: "/term&condition" },
+  { title: "Returns Policy", link: "/return-policy" },
+  { title: "Accessibility", link: "/accessibility" },
+];
+
+const helpful = [
+  { title: "Contact", link: "/contact-us" },
+  { title: "FAQs", link: "/faq" },
+  { title: "Live Chat", link: "/" },
+];
+
+const services = [
+  { title: "1on1 Coaching", link: "/" },
+  { title: "Company Review", link: "/" },
+  { title: "Accounts Review", link: "/" },
+  { title: "HR Consulting", link: "/" },
+  { title: "SEO Optimisation", link: "/" },
+];
+
+const company = [
+  { title: "About", link: "/about-us" },
+  { title: "Meet the Team", link: "/team" },
+  { title: "History", link: "/history" },
+  { title: "Careers", link: "/career" },
+];
+
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 px-container py-10">
+    <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 px-container py-6">
       <div className="max-w-screen-xl">
         <div className="flex lg:gap-[8rem] gap-[2rem] max-lg:flex-col w-full">
           <div className="max-lg:items-center max-lg:justify-center flex flex-col">
@@ -121,85 +149,45 @@ const Footer = () => {
             <div className="max-sm:p-3">
               <p className="font-medium">Company</p>
               <nav className="flex flex-col mt-4 space-y-4 text-sm text-gray-500">
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  About{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Meet the Team{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  History{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Careers{" "}
-                </a>
+                {company.map((comp, index) => (
+                  <a key={index} className="hover:opacity-75" href={comp.link}>
+                    {comp.title}
+                  </a>
+                ))}
               </nav>
             </div>
             <div className="max-sm:p-3">
               <p className="font-medium">Services</p>
               <nav className="flex flex-col mt-4 space-y-4 text-sm text-gray-500">
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  1on1 Coaching{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Company Review{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Accounts Review{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  HR Consulting{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  SEO Optimisation{" "}
-                </a>
+                {services.map((servic, index) => (
+                  <a
+                    key={index}
+                    className="hover:opacity-75"
+                    href={servic.link}
+                  >
+                    {servic.title}
+                  </a>
+                ))}
               </nav>
             </div>
             <div className="max-sm:p-3">
               <p className="font-medium">Helpful Links</p>
               <nav className="flex flex-col mt-4 space-y-4 text-sm text-gray-500">
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Contact{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  FAQs{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Live Chat{" "}
-                </a>
+                {helpful.map((link, index) => (
+                  <a key={index} className="hover:opacity-75" href={link.link}>
+                    {link.title}
+                  </a>
+                ))}
               </nav>
             </div>
             <div className="max-sm:p-3">
               <p className="font-medium">Legal</p>
               <nav className="flex flex-col mt-4 space-y-4 text-sm text-gray-500">
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Privacy Policy{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Terms &amp; Conditions{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Returns Policy{" "}
-                </a>
-                <a className="hover:opacity-75" href="">
-                  {" "}
-                  Accessibility{" "}
-                </a>
+                {legals.map((legal, index) => (
+                  <a key={index} className="hover:opacity-75" href={legal.link}>
+                    {legal.title}
+                  </a>
+                ))}
               </nav>
             </div>
           </div>

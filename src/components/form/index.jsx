@@ -2,37 +2,15 @@
 import React, { useState } from "react";
 
 const Form = () => {
-  //   const [formData, setFormData] = useState({
-  //     name: "",
-  //     email: "",
-  //     message: "",
-  //   });
-
-  //   const handleChange = (event) => {
-  //     const { name, value } = event.target;
-  //     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-  //   };
-
-  //   const handleSubmit = (event) => {
-  //     event.preventDefault();
-  //     alert(
-  //       `Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
-  //     );
-  //   };
   return (
     <div className="px-container py-4 flex flex-col gap-6">
       <div className="text-heading4 text-center">ContactUs</div>
-      <form
-        // onSubmit={handleSubmit}
-        className="flex flex-col gap-4 shadow-lg border border-black p-4 w-1/2 rounded-xl max-md:w-full"
-      >
+      <form className="flex flex-col gap-4 shadow-lg border border-black p-4 w-1/2 rounded-xl max-md:w-full">
         <label htmlFor="name">Name:</label>
         <input
           type="text"
           id="name"
           name="name"
-          //   value={formData.name}
-          //   onChange={handleChange}
           className="border border-black rounded p-2"
           placeholder="Enter Your Name"
           required
@@ -43,8 +21,6 @@ const Form = () => {
           type="email"
           id="email"
           name="email"
-          //   value={formData.email}
-          //   onChange={handleChange}
           className="border border-black rounded p-2"
           placeholder="Enter Your Email"
           required
@@ -55,8 +31,6 @@ const Form = () => {
           id="message"
           name="message"
           rows={3}
-          //   value={formData.message}
-          //   onChange={handleChange}
           className="border border-black rounded p-2"
           placeholder="Any Query? So Please Write a Message in This Text Area"
         />
