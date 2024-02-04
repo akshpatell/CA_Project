@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const Form = () => {
   return (
-    <div className="px-container pt-4 pb-8 flex flex-col gap-6">
+    <div className="px-container pt-4 pb-8 flex flex-col gap-6 ">
       <h4 className="text-heading4 text-center">
         Get Personal Assistance With Our Exclusive Services
       </h4>
@@ -36,7 +36,7 @@ const Form = () => {
             type="text"
             id="name"
             name="name"
-            className="shadow-lg rounded p-2"
+            className="shadow-lg rounded p-2 outline-none"
             placeholder="Enter Your Name"
             required
           />
@@ -46,7 +46,7 @@ const Form = () => {
             type="email"
             id="email"
             name="email"
-            className="shadow-lg rounded p-2"
+            className="shadow-lg rounded p-2 outline-none"
             placeholder="Enter Your Email"
             required
           />
@@ -56,7 +56,7 @@ const Form = () => {
             id="message"
             name="message"
             rows={3}
-            className="shadow-lg rounded p-2"
+            className="shadow-lg rounded p-2 outline-none"
             placeholder="Any Query? So Please Write a Message in This Text Area"
           />
           {/* <label className="block">Upload File</label>
