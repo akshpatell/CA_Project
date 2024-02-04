@@ -6,7 +6,7 @@ export default function NotFound() {
       <h1 className="text-heading4 text-gray-500">
         <span className="font-bold text-blue-950">404</span> Page not found
       </h1>
-      <p className="text-small-regular text-gray-700">
+      <p className="text-center text-gray-700">
         The page you tried to access does not exist.
       </p>
       <Link
