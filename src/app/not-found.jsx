@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div className="bg-gradient-to-l from-gray-100 via-[#bce1ff] to-gray-100 min-h-[calc(100vh-64px)] text-gold  flex flex-col items-center justify-center">
       <h1 className="text-heading4 text-gray-500">
-        <span className="font-bold text-blue-950">404</span> Page not found 🙁
+        <span className="font-bold text-blue-950">404</span> Page not found
       </h1>
       <p className="text-center text-gray-700">
         The page you tried to access does not exist.🤷‍♂️
