@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="flex mt-8 space-x-6 text-gray-600">
               <a
                 className="hover:opacity-75"
-                href=""
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -69,7 +69,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href=""
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -89,7 +89,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href=""
+                href="https://twitter.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -105,7 +105,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href=""
+                href="https://github.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -125,7 +125,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href=""
+                href="https://dribbble.com/"
                 target="_blank"
                 rel="noreferrer"
               >
