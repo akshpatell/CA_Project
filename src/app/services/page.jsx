@@ -7,7 +7,7 @@ import React from "react";
 const ServicesPage = () => {
   return (
     <div>
-      <Banner />
+      {/* <Banner /> */}
       <AboutServices />
       <Faqs />
       <Form />
