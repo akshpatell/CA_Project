@@ -7,7 +7,7 @@ const Form = () => {
       <h4 className="text-heading4 text-center">
         Get Personal Assistance With Our Exclusive Services
       </h4>
-      <div className="flex gap-6 max-md:flex-col shadow-lg rounded-xl p-4 bg-gradient-to-l from-gray-100 via-[#bce1ff] to-gray-100">
+      <div className="flex gap-6 max-md:flex-col max-md:divide-y-2 max-md:divide-black shadow-lg rounded-xl p-4 bg-gradient-to-l from-gray-100 via-[#bce1ff] to-gray-100">
         <div className="flex flex-col gap-4 sm:justify-between w-1/2 max-md:w-full">
           <div className="text-center p-2 text-subtitle1">Taxation</div>
           <p className="text-center text-heading3">
@@ -29,8 +29,14 @@ const Form = () => {
               <li>3. Services are subject to market risk</li>
             </ul>
           </div>
+          <button
+            type="submit"
+            className="md:hidden bg-black text-white p-2 rounded hover:bg-transparent hover:border hover:border-black hover:text-black"
+          >
+            Pay
+          </button>
         </div>
-        <form className="flex flex-col gap-4 w-1/2 max-md:w-full justify-center md:px-14">
+        <form className="max-md:pt-6 flex flex-col gap-4 w-1/2 max-md:w-full justify-center md:px-14">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -78,12 +84,20 @@ const Form = () => {
               </div>
             </label>
           </div> */}
-          <button
-            type="submit"
-            className="bg-black text-white p-2 rounded w-1/4 hover:bg-transparent hover:border hover:border-black hover:text-black"
-          >
-            Submit
-          </button>
+          <div className="flex gap-2 items-center">
+            <button
+              type="submit"
+              className="bg-black text-white p-2 rounded max-md:w-full w-1/4 hover:bg-transparent hover:border hover:border-black hover:text-black"
+            >
+              Submit
+            </button>
+            <button
+              type="submit"
+              className="max-md:hidden bg-black text-white p-2 rounded w-1/4 hover:bg-transparent hover:border hover:border-black hover:text-black"
+            >
+              Pay
+            </button>
+          </div>
         </form>
       </div>
     </div>
