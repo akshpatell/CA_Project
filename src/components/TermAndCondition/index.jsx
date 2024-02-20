@@ -39,6 +39,11 @@ const TermAndCondition = () => {
               <p className="text-justify">{section.content}</p>
             </div>
           ))}
+          <p className="text-justify">
+            Please review these policies and terms carefully before engaging
+            with Tax Mantrana for services. If you have any questions or
+            concerns, please contact us for clarification.
+          </p>
         </div>
       </div>
     </div>
