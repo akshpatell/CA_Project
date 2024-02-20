@@ -4,7 +4,7 @@ import React from "react";
 const legals = [
   { title: "Privacy Policy", link: "/privacy-policy" },
   { title: "Terms & Conditions", link: "/term-and-condition" },
-  { title: "Returns Policy", link: "/return-policy" },
+  { title: "Returns Policy", link: "/refund-policy" },
   { title: "Accessibility", link: "/accessibility" },
 ];
 
